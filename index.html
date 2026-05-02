@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Kauã Victor Dias de Lima</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --link-color: #2980b9;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-card {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        address {
+            font-style: normal;
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: var(--link-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            border-bottom: 1px solid transparent;
+        }
+
+        .social-links a:hover {
+            border-bottom: 1px solid var(--link-color);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            background: #f8f9fa;
+            border-left: 5px solid var(--accent-color);
+            padding: 5px 15px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        article {
+            margin-bottom: 15px;
+        }
+
+        .item-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white !important;
+            padding: 4px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .btn-link:hover {
+            background-color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .institution {
+            color: #7f8c8d;
+            font-style: italic;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-group strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 3px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .resume-card { box-shadow: none; width: 100%; padding: 0; }
+            .btn-link { border: 1px solid #333; color: black !important; background: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="resume-card">
+        <header>
+            <h1>Kauã Victor Dias de Lima</h1>
+            <address>
+                Paulista, Pernambuco | +55 81 9332-8908 | victorkaua212@gmail.com
+                <nav class="social-links">
+                    <a href="https://linkedin.com/in/kaunn/" target="_blank">LinkedIn</a> | 
+                    <a href="https://github.com/kaun7283" target="_blank">GitHub</a>
+                </nav>
+            </address>
+        </header>
+
+        <section id="summary">
+            <h2>Resumo Profissional</h2>
+            <p>
+                Estudante de Sistemas de Informação focado em desenvolvimento backend[cite: 2]. Experiência prática com Python e Flask, 
+                aplicando arquitetura MVC e integração de dados. Habilidades em edição de vídeo e motion design.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Formação Acadêmica</h2>
+            <article>
+                <div class="item-meta">
+                    <span>Bacharelado em Sistemas de Informação</span>
+                    <time datetime="2028-11">Prev. Nov/2028</time>
+                </div>
+                <span class="institution">UniNassau – Olinda, PE[cite: 2]</span>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos de Destaque</h2>
+            
+            <article>
+                <div class="item-meta">
+                    <div class="project-header">
+                        <span>Projeto Alfabetiza (IMIP)</span>
+                        <a href="https://github.com/kaun7283/Alfabetiza-Aplica-o-Educacional-com-Flask-e-JavaScript" 
+                           class="btn-link" target="_blank">
+                           Ver Código no GitHub 🔗
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li>Aplicação interativa para alfabetização infantil em ambiente hospitalar.</li>
+                    <li>Backend em <strong>Flask</strong> com arquitetura <strong>MVC</strong> e <strong>SQLite/SQLAlchemy</strong>.</li>
+                    <li>Frontend dinâmico com <strong>JavaScript (ES6+)</strong>.</li>
+                    <li>Versionamento e organização via <strong>Git/GitHub</strong>.</li>
+                </ul>
+            </article>
+
+            <article>
+                <div class="item-meta">
+                    <span>Fake Pinterest – Full Stack Web App</span>
+                </div>
+                <ul>
+                    <li>Desenvolvimento de plataforma de compartilhamento de fotos com sistema completo de <strong>CRUD</strong>.</li>
+                    <li>Sistema de autenticação seguro com <strong>Flask-Login</strong> e criptografia de senhas (Werkzeug).</li>
+                    <li>Implementação de upload de mídia com armazenamento vinculado via <strong>SQLAlchemy</strong>.</li>
+                    <li>Uso de <strong>Jinja2 templates</strong> para renderização dinâmica e responsiva do conteúdo.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Competências Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <strong>Linguagens</strong>
+                    Python, JavaScript, HTML5, CSS3
+                </div>
+                <div class="skill-group">
+                    <strong>Frameworks</strong>
+                    Flask (Web Backend)
+                </div>
+                <div class="skill-group">
+                    <strong>Bancos de Dados</strong>
+                    SQL, SQLite, SQLAlchemy
+                </div>
+                <div class="skill-group">
+                    <strong>Design & Vídeo</strong>
+                    Adobe After Effects, Edição de Vídeo
+                </div>
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>Idiomas</h2>
+            <ul>
+                <li><strong>Português:</strong> Nativo</li>
+                <li><strong>Inglês:</strong> Técnico (Leitura de documentação)</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
